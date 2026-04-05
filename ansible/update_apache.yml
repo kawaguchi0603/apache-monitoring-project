@@ -1,0 +1,10 @@
+---
+- name: Update and install Apache
+  hosts: webservers
+  become: yes # This means executing with sudo privileges
+  tasks:
+    - name: Ensure Apache is at the latest version
+      apt:
+        name: apache2
+        state: latest
+        update_cache: yes
