@@ -24,3 +24,11 @@
 - パッケージ更新の自動化: apt モジュールの利用
 - Apache2 の導入・管理: サービスの状態管理までを自動化
 - インベントリ管理: /etc/ansible/hosts による対象サーバーの一元管理
+## 7. 動作確認エビデンス
+<img width="1211" height="340" alt="image" src="https://github.com/user-attachments/assets/4d14ef82-3a40-475e-87f4-d680aae0730a" />
+
+## 使用技術
+- OS: Ubuntu 22.04 LTS
+- Automation: Ansible
+- Monitoring: Prometheus, Grafana
+- Version Control: Git / GitHub
