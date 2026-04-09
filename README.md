@@ -18,3 +18,8 @@
 
 ## 5. 動作確認エビデンス
 <img width="1523" height="806" alt="スクリーンショット 2026-03-29 170630" src="https://github.com/user-attachments/assets/5ecc1b49-cccd-4715-bb97-ca0cdad6c91a" />
+## 6.Ansible による自動構成管理 (IaC)
+_ **監視サーバー（司令塔）から対象サーバーに対して、一刻も早い展開が可能な設計図（Playbook）を実装しました。
+_ **パッケージ更新の自動化: apt モジュールの利用
+_ **Apache2 の導入・管理: サービスの状態管理までを自動化
+_ **インベントリ管理: /etc/ansible/hosts による対象サーバーの一元管理
