@@ -1,0 +1,20 @@
+# Apache 稼働状況監視システムの構築
+
+## 1. プロジェクト概要
+本プロジェクトは、Linux サーバー運用における「可視化」と「異常検知」の基礎を習得するため、Prometheus と Grafana を用いた Apache Web サーバーの監視環境を構築したものです。
+
+## 2. システム構成図
+
+* **Web Server (Node B):** Ubuntu 24.04, Apache2, Apache Exporter (Port 9117)
+* **Monitoring Server (Node A):** Ubuntu 24.04, Prometheus (Port 9090), Grafana (Port 3000)
+
+## 3. 実装した機能
+- **リアルタイム監視:** Apache のアクセス数、アップタイム、データ転送量を可視化。
+- **マルチサーバー構成:** 監視側と被監視側を分離し、実務に近いネットワーク構成を再現。
+
+## 4. 苦労した点と解決策
+- **環境構築時のエラー対応:** Prometheus インストール時の 404 エラーに対し、バージョン情報の変数管理ミスを特定し、直接指定による確実な導入手順を確立しました。
+- **データ可視化の最適化:** Grafana 導入初期にデータが表示されない（No Data）問題が発生しましたが、ダッシュボードのクエリ変数を環境に合わせて手動調整することで解決しました。
+
+## 5. 動作確認エビデンス
+<img width="1523" height="806" alt="スクリーンショット 2026-03-29 170630" src="https://github.com/user-attachments/assets/5ecc1b49-cccd-4715-bb97-ca0cdad6c91a" />
